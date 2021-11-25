@@ -25,7 +25,7 @@ function App() {
 
   const check = () => {
     setNumber(""); // input 태그 초기화
-    if(isNaN(number) === false) return true;
+    if(Number.isInteger(Number(number)) && number.indexOf(" ") === -1) return true;
   }
 
   return (
